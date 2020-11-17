@@ -1,0 +1,46 @@
+link(rel='stylesheet' href='/css/style.css')
+nav.pcoded-navbar
+  .navbar-wrapper
+    .navbar-brand.header-logo(style='background-color: White;')
+      a.b-brand(target='_blank' href='')
+        .b-bg
+          img(src="/images/rogersnew.png" width='40')
+        span.b-title(style='color:#D53428;font-weight:bold;') ROGERS GEO
+      a#mobile-collapse.mobile-menu(href='javascript:')
+        span
+    .navbar-content.scroll-div
+      ul#myDiv.nav.pcoded-inner-navbar
+        li.nav-item.pcoded-menu-caption
+        li.nav-item.active
+          a.nav-link(href='/dashboard')
+            span.pcoded-micon
+              i.feather.icon-home
+            span.pcoded-mtext Dashboard
+        li.nav-item.pcoded-menu-caption
+        li.nav-item
+          a.nav-link(href='/geomarker')
+            span.pcoded-micon
+              i.feather.icon-map-pin
+            span.pcoded-mtext Geomarker
+        li.nav-item.pcoded-menu-caption
+        li.nav-item
+          a.nav-link(href='/scenarios')
+            span.pcoded-micon
+              i.feather.icon-file-text
+            span.pcoded-mtext Scenarios
+        li.nav-item.pcoded-menu-caption
+        li.nav-item.pcoded-hasmenu
+          a.nav-link(href='javascript:')
+            span.pcoded-micon
+              i.fa.fa-cogs
+            span.pcoded-mtext Settings
+          ul.pcoded-submenu
+            li
+              a(href='') Profile
+        li.nav-item.pcoded-menu-caption
+        li.nav-item
+          a.nav-link(href='/')
+            span.pcoded-micon
+              i.feather.icon-power
+            span.pcoded-mtext Logout
+script(src='/static/assets/js/clientsidejs.js')

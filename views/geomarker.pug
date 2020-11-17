@@ -1,0 +1,79 @@
+html
+  head
+  body
+    link(rel='icon' href='/images/rogers.png' type='image/x-icon')
+    link(rel='stylesheet' href='/fonts/fontawesome/css/fontawesome-all.min.css')
+    link(rel='stylesheet' href='/plugins/animation/css/animate.min.css')
+    link(rel='stylesheet' href='/css/style.css')
+    link(rel='stylesheet' href='/css/leaflet-search.css')
+    include includes/navigation.pug
+    meta(http-equiv='content-type' content='text/html; charset=UTF-8')
+    script.
+      L_NO_TOUCH = false;
+      L_DISABLE_3D = false;
+    script(src='https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js')
+    script(src='https://code.jquery.com/jquery-1.12.4.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css')
+    link(rel='stylesheet' href='https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css')
+    style.
+      #map {position:absolute;top:0;bottom:0;right:0;left:0;}
+    meta(name='viewport' content='width=device-width,\
+    initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    style.
+      #map_3a00c3c1dba7409bb59f39457c7b4088 {
+      position: relative;
+      width: 80.0%;
+      height: 65.0%;
+      margin-left:280px;
+      margin-top: -45px;
+      border-radius:10px;
+      }
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.css')
+    style.
+      #export {
+      position: absolute;
+      top: 5px;
+      right: 150px;
+      z-index: 999;
+      background: white;
+      color: black;
+      padding: 6px;
+      border-radius: 4px;
+      font-family: 'Helvetica Neue';
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: none;
+      top: 90px;
+      }
+    script(src='https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css')
+    .pcoded-content(style='margin-top:-20px;margin-left:255px;')
+      .pcoded-inner-content
+        .main-body
+          .page-wrapper
+            .row
+              .col-sm-12
+                .card
+                  .card-header
+                    h5 Upload
+                  .card-body
+                    .row
+                      .col-md-6
+                        #fileUpload
+                          input#file.form-control(type='file' name='excel_file' style='width:400px;padding-bottom:35px;' required='')
+                          button.btn.btn-danger(style='margin-top:15px;' onclick='fileUpload()') Upload
+    #map_3a00c3c1dba7409bb59f39457c7b4088.folium-map
+
+    script(src='/js/geomap.js')
+    script(src='/js/L.KML.js')
+    script(src='/js/leaflet-search.js')
+    script(src='/js/leaflet-search-geocoder.js')
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js')
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js')
