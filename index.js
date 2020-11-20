@@ -30,8 +30,8 @@ app.get("/", (req, res) => {
 app.get("/geomarker", (req, res) => {
     res.render('geomarker');
 });
-app.get("/scenarios", (req, res) => {
-    res.render('scenarios');
+app.get("/workflows", (req, res) => {
+    res.render('workflows');
 });
 app.get("/dashboard", (req, res) => {
     res.render('dashboard');
