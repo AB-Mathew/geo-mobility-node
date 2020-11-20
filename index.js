@@ -25,7 +25,7 @@ const port = process.env.PORT || "8000";
 // });
 
 app.get("/", (req, res) => {
-    res.render('index');
+    res.render('login');
 });
 app.get("/geomarker", (req, res) => {
     res.render('geomarker');
