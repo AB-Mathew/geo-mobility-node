@@ -25,16 +25,22 @@ const port = process.env.PORT || "8000";
 // });
 
 app.get("/", (req, res) => {
-    res.render('index');
+    res.render('login');
 });
 app.get("/geomarker", (req, res) => {
-    res.render('geomarker');
+    res.render('geomarker', {
+        path: req.path
+    });
 });
-app.get("/scenarios", (req, res) => {
-    res.render('scenarios');
+app.get("/workflows", (req, res) => {
+    res.render('workflows',{
+        path: req.path
+    });
 });
 app.get("/dashboard", (req, res) => {
-    res.render('dashboard');
+    res.render('dashboard', {
+        path: req.path
+    });
 });
 
 
