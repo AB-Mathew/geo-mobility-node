@@ -11,19 +11,19 @@ nav.pcoded-navbar
     .navbar-content.scroll-div
       ul#myDiv.nav.pcoded-inner-navbar
         li.nav-item.pcoded-menu-caption
-        li.nav-item.active
+        li.nav-item(class=path=='/dashboard'?'active':'undefined')
           a.nav-link(href='/dashboard')
             span.pcoded-micon
               i.feather.icon-home
             span.pcoded-mtext Dashboard
         li.nav-item.pcoded-menu-caption
-        li.nav-item
+        li.nav-item(class=path=='/geomarker'?'active':'undefined')
           a.nav-link(href='/geomarker')
             span.pcoded-micon
               i.feather.icon-map-pin
             span.pcoded-mtext Geomarker
         li.nav-item.pcoded-menu-caption
-        li.nav-item
+        li.nav-item(class=path=='/workflows'?'active':'undefined')
           a.nav-link(href='/workflows')
             span.pcoded-micon
               i.feather.icon-file-text
